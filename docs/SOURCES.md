@@ -1,0 +1,21 @@
+# Evidence and scope
+
+Read in full (including expanded Treatment section of ASHA) on 2026-09-09. These sources inform strategies; they do not validate this app, its dosage, its algorithm, or effectiveness for undiagnosed habitual mumbling. No affiliation or endorsement. Exercise passages are original, not copyrighted clinical test items.
+
+| Source | Exact section and supported idea | Application / boundary |
+|---|---|---|
+| [Ashford & St Peter’s Hospitals NHS Foundation Trust — Dysarthria](https://www.ashfordstpeters.nhs.uk/dysarthria) | “How to get the most from your speech”: upright position; slow speech and frequent pauses; over-articulate sounds/syllables and finish word endings; short phrases; do not shout; rest when tired. “How the listener can help”: feedback, clarification and quiet surroundings. | Comfortable word endings, syllable attention, phrase boundaries and listening check. No shouting or nonspeech strengthening program. |
+| [ASHA Practice Portal — Dysarthria in Adults](https://www.asha.org/Practice-Portal/Clinical-Topics/Dysarthria-in-Adults/) | Treatment → Considerations for Treatment Planning: individualization, functional goals, practice variability and feedback for acquisition/retention/transfer. Restorative Treatment Approaches → Articulation: minimal contrasts, multisyllabic sequences, clear speech. Prosody: pacing, hand tapping, lexical/contrastive stress, breaths at natural pauses. Compensatory Treatment Approaches: restating, communication-partner feedback, reducing noise. Cultural and Linguistic Factors: dialect/accent and all languages. | Progress from words to phrases to situations, original contrasts, light finger cue, meaning through stress, repair missions. Three-attempt ≥4/≤2 progression is a transparent product heuristic, NOT a clinical threshold. |
+| [NHS — Dysarthria (difficulty speaking)](https://www.nhs.uk/conditions/dysarthria/) | Immediate action: suddenly slurred/garbled speech can be stroke; emergency services. Non-urgent advice: gradual changes need medical assessment. Treatment: speech-language therapy is individualized; slowing speech is one possible strategy. | Prominent stop/seek-help guidance. Local emergency number wording expands UK guidance for international users. Not a diagnostic screening tool. |
+
+## What is measured
+- **Overall pace estimate**: manually entered/confirmed words actually spoken divided by entire elapsed duration (including silence) times 60. Word helper uses Unicode letters/numbers with internal hyphens/apostrophes and strips pedagogical syllable dots. Prompt word count is not evidence those words were spoken. Repetitions count. Text helpers are inappropriate for free speech unless the speaker actually reads all prompt words once.
+- **Self-rated understandability and effort**: two explicitly subjective 1–5 scales. Not an objective listener or pronunciation score.
+- **Live local acoustic cues**: RMS waveform level (uncalibrated); clipping when peak ≥0.98; quiet when RMS <0.025. A quiet interval lasting ≥600 ms after a signal is counted once. Noise, microphone processing, gain, distance and device influence all results. These cannot count omitted syllables or judge useful pauses. Quiet counts are live only, not saved clinical metrics.
+- **Practice engagement**: attempts and local calendar days. Badges reward exploration, not proven speech improvement.
+
+## Baseline / retest
+The baseline passage is fixed within each language. The first saved comparison sample is baseline; later ones are retests. Same text, comfortable usual pace, room, distance and counting method are requested. Data are separated by language. German/English word rates are not directly comparable. Familiarity, subjective rating and different conditions can change results; the side-by-side display is not proof of treatment efficacy.
+
+## Clinical boundary
+Do not infer dysarthria from mumbling. This app is for adult self-practice, not assessment, diagnosis, medical treatment, or substitution for an SLP/logopedist. Stop on pain, hoarseness, dizziness or strain. Sudden new speech difficulty merits immediate emergency help; persistent or gradual changes merit medical/SLP advice. Dialect, accent and naturally reduced syllables are not errors.
