@@ -6,7 +6,7 @@ A privacy-first German/English practice desk for clearer, more intentional speec
 
 ## Deutsch
 
-Wähle Schwerpunkt, Stufe, Alltagssituation und Tagesziel unter **Plan anpassen**. Übe kurz und bequem: ankommen → eine Fähigkeit → eine Variation. Es gibt 18 eigenständige Übungen pro Sprache, zusätzlich eine Einstiegsübung und eine feste Vergleichsprobe. Mit **Vergleichsprobe** speicherst du zuerst eine Startprobe und später Wiederholungsproben desselben Texts.
+Wähle Schwerpunkt, Stufe, Alltagssituation und Tagesziel unter **Plan anpassen**. Übe kurz und bequem: ankommen → eine Fähigkeit → eine Variation. Es gibt **72 eigenständige Übungen pro Sprache** (18 je Schwerpunkt, 6 je Stufe), zusätzlich eine Einstiegsübung und eine feste Vergleichsprobe. Mit **Vergleichsprobe** speicherst du zuerst eine Startprobe und später Wiederholungsproben desselben Texts.
 
 Du kannst einen Timer verwenden, eine Dauer eintragen oder freiwillig das Mikrofon einschalten. Pegel und stille Abschnitte werden lokal angezeigt; Aufnahmen kannst du anhören und herunterladen. Zähle tatsächlich gesprochene Wörter für eine Tempo-Schätzung. Bewerte Verständlichkeit und Anstrengung selbst. Der Fortschritt bleibt in diesem Browser; JSON-Export und Löschen findest du unter **Fortschritt**. Heruntergeladene Dateien werden nicht mitgelöscht.
 
@@ -14,7 +14,7 @@ Bei plötzlich neuer/veränderter Sprache sofort den örtlichen Notruf wählen (
 
 ## English
 
-Choose focus, level, context and daily goal in **Personalize plan**. Practice comfortably: arrive → one skill → variation. There are 18 original exercises per language plus a warm-up and fixed comparison passage. **Comparison sample** preserves your first baseline; later samples become retests of the same passage.
+Choose focus, level, context and daily goal in **Personalize plan**. Practice comfortably: arrive → one skill → variation. There are **72 original exercises per language** (18 per focus, 6 per level) plus a warm-up and fixed comparison passage. **Comparison sample** preserves your first baseline; later samples become retests of the same passage.
 
 Use the timer, enter a duration, or choose the microphone. Live level and quiet intervals are local acoustic cues; listen to or download the recording. Count words actually spoken for a pace estimate. Rate understandability and effort yourself. Progress remains in this browser; **Progress** offers JSON export and deletion. Downloads are not deleted remotely.
 
@@ -22,7 +22,9 @@ Suddenly new/changed speech needs immediate local emergency help (EU 112, UK 999
 
 ## Features and honest boundaries
 
-- Three focuses × three levels × two variations per language: articulation/contrasts/stress, syllable attention/longer words, pacing/chunking/conversation.
+- Four focuses × three levels × six exercises = **72 per language, 144 total**, excluding warm-ups and fixed baselines. Articulation/contrasts/stress; syllables/longer words; pacing/chunking/conversation; and a dedicated S-sound pathway from isolation and syllables through words, contrasts, clusters, sentences and real situations. These are authored prompts with individual instructions, not generated word permutations.
+- **S-Laut: Tipps / S sound: tips** opens bilingual optional placement/airflow/voicing cues, German vs English spelling-to-sound examples, linked clinical/phonetic sources and limitations. Its start button selects S focus at level 1. No automatic articulation score or built-in model audio.
+- Select any exercise at your chosen level directly, or cycle all six with **Andere Übung / Try another**. Rail titles follow the actual variants. Speak → rest → optionally listen → repeat prompts encourage comfortable repeats, not speed. Sound/syllable exercises disable the text-count helper and recommend leaving word count blank.
 - Fully bilingual authored UI, language-specific exercises, independent language histories, editable context and daily goal. Native browser audio/validation controls follow the browser locale.
 - Suggest next level after three matching practice attempts self-rated ≥4 understandability and ≤2 effort. No clinical rule; free manual level choice. Warm-up and baseline do not qualify.
 - Fixed baseline/retest comparison, attempt table, practice days and non-punitive badges. Pace is manual words / full duration ×60, not a clarity score.
@@ -51,6 +53,10 @@ BASE_URL=https://rwiermerstudio.github.io/clear-speech-studio/ npm run test:e2e
 ```
 
 See [test coverage/limitations](docs/TESTING.md), [source-to-method evidence](docs/SOURCES.md), and [committed implementation plan](docs/plans/implementation-plan.md).
+
+## Saved-data compatibility
+
+The `clear-speech-studio:v1` key and version remain unchanged. All original exercise indexes/IDs, texts and fixed baseline passages are preserved; appended curriculum rows use explicit level maps rather than reindexing old data. Existing history, notes, preferences and exports remain readable. The three-focus exploration badge remains available (renamed to describe three focuses rather than all four). No reset or migration is required.
 
 ## Compatibility and limitations
 

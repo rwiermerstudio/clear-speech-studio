@@ -10,7 +10,7 @@ npm run verify
 BASE_URL=https://rwiermerstudio.github.io/clear-speech-studio/ npm run test:e2e
 ```
 
-Initial complete local release verification: **3 Node tests + 18 Chromium browser tests passed**. Desktop Chromium and Pixel 7 viewport/touch emulation run the same nine cases each. All 18 are actual browser execution; mobile emulation is not a physical phone test. See Actions for the exact commit's repeatable run. Browser HTML reports and failure traces are generated locally in ignored `playwright-report/` and `test-results/`.
+The expanded release suite contains **5 Node tests + 24 Chromium browser tests** (12 cases each on desktop and Pixel 7 viewport/touch emulation). Mobile emulation is not a physical phone test. See Actions for the exact commit's repeatable result. Browser HTML reports, S-guide screenshots in both languages and failure traces are generated locally in ignored `playwright-report/` and `test-results/`; CI preserves them in `browser-verification` for 14 days. The separate `github-pages` artifact contains the exact deployed static build.
 
 ## Covered
 
@@ -18,7 +18,10 @@ Initial complete local release verification: **3 Node tests + 18 Chromium browse
 - Three matching comfortable practice attempts suggest the next level; other language/effort/baseline do not qualify.
 - Synthetic waveform RMS classification: quiet, signal and clipping.
 - Distinct daily preparation/skill/variation; bilingual switching and persisted settings.
-- Every focus × level × variation in both languages exercised through controls.
+- Programmatic count and normalized prompt/title dedupe: exactly **72 entries per language**, four focuses × 18, each explicit level map containing six unique entries. Every ID is mapped once; legacy IDs retain their level. UI language key sets agree.
+- Every focus × level × all six variants in both languages traversed through UI, checking title, instruction and prompt against authored data: 144 exercises on each viewport. Direct selector and variant wraparound checked; active rail matches selected exercise.
+- Dedicated bilingual S guide: safe near-teeth/tongue cues, /s/ /z/ /ʃ/ /ts/ map, four source links, axe, narrow layout, shortcut into first S exercise, disabled word helper for sound-only practice, saved S preference across reload.
+- Seeded v1 preferences/history survive unchanged and old exercise IDs still display their original titles. Existing baseline/retest test checks fixed passages and language separation.
 - Baseline first, subsequent retest, exact same passage, side-by-side comparison, separate language history.
 - Manual save/reload, actual JSON download parsed to verify saved metric and provenance, delete readback.
 - Denied microphone → timer fallback; blocked localStorage → warning and in-memory progress.
